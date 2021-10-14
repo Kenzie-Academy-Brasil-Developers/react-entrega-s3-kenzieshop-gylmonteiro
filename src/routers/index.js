@@ -1,10 +1,20 @@
 import Header from "../components/Header";
 import Home from "../pages/Home";
+import Cart from "../pages/Cart";
+import { Route, Switch } from "react-router-dom";
 const Routers = () => {
   return (
     <div>
-      <Header></Header>
-      <Home></Home>
+      <Switch>
+        <Route exact path="/">
+          <Header />
+          <Home />
+        </Route>
+        <Route path="/cart">
+          <Header />
+          <Cart />
+        </Route>
+      </Switch>
     </div>
   );
 };

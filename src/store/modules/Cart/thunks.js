@@ -8,6 +8,7 @@ export const addToCartThunk = (product) => (dispatch) => {
     const newCart = [...cart, product];
     localStorage.setItem("cart", JSON.stringify(newCart));
   }
+
   dispatch(addToCart(product));
 };
 

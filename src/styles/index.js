@@ -23,3 +23,16 @@ export const HomeContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
 `;
+
+export const HeaderCart = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+
+  li {
+    margin: 3px;
+  }
+`;
